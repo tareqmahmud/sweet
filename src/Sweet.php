@@ -92,4 +92,21 @@ class Sweet
 
         return $this;
     }
+
+    /**
+     * Create error message
+     *
+     * @param $title
+     * @param null $message
+     * @param array|null $options
+     * @return $this
+     * @internal param string $confirmButtonText
+     * @internal param string $buttonText
+     */
+    public function error($title, $message = null, array $options = null)
+    {
+        $this->create($title, $message, 'error', $options);
+
+        return $this;
+    }
 }
