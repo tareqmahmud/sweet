@@ -75,4 +75,21 @@ class Sweet
 
         return $this;
     }
+
+    /**
+     * Create warning message
+     *
+     * @param $title
+     * @param null $message
+     * @param array|null $options
+     * @return $this
+     * @internal param string $confirmButtonText
+     * @internal param string $buttonText
+     */
+    public function warning($title, $message = null, array $options = null)
+    {
+        $this->create($title, $message, 'warning', $options);
+
+        return $this;
+    }
 }
