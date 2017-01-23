@@ -58,4 +58,21 @@ class Sweet
 
         return $this;
     }
+
+    /**
+     * Create success message
+     *
+     * @param $title
+     * @param null $message
+     * @param array|null $options
+     * @return $this
+     * @internal param string $confirmButtonText
+     * @internal param string $buttonText
+     */
+    public function success($title, $message = null, array $options = null)
+    {
+        $this->create($title, $message, 'success', $options);
+
+        return $this;
+    }
 }
