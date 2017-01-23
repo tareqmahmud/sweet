@@ -1,7 +1,7 @@
 <?php
 
 if (!function_exists('sweet')) {
-    function sweet($title, $message = null)
+    function sweet($title = null, $message = null)
     {
         $sweetNotification = app('sweet');
 
