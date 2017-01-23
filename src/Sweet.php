@@ -41,4 +41,21 @@ class Sweet
             'options'           => $options
         ]);
     }
+
+    /**
+     * Create info message
+     *
+     * @param $title
+     * @param null $message
+     * @param array|null $options
+     * @return $this
+     * @internal param string $confirmButtonText
+     * @internal param string $buttonText
+     */
+    public function info($title, $message = null, array $options = null)
+    {
+        $this->create($title, $message, 'info', $options);
+
+        return $this;
+    }
 }
