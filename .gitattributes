@@ -1,2 +1,1 @@
-src/assets/sweetalert.css linguist-vendored=false
-src/assets/sweetalert.js linguist-vendored=false
+src/assets/* linguist-vendored=true
