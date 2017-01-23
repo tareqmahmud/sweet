@@ -257,6 +257,11 @@ index.blade.php
 
 ![sweet](https://cloud.githubusercontent.com/assets/4035645/22215598/f6903920-e169-11e6-8a25-dedea4b942e8.png)
 
+
+## License
+
+[View the license](https://github.com/tareqmahmud/sweet/blob/master/LICENSE) for this repo.
+
 ## Credits
 
 ### [Sweet Alert](Sweet Alert) - Beautiful Sweet Alert JS
