@@ -35,10 +35,10 @@ class Sweet
     private function create($title, $message, $label, array $options = null)
     {
         $this->session->flash('sweet_message', [
-            'title'             => $title,
-            'message'           => $message,
-            'label'             => $label,
-            'options'           => $options
+            'title'   => $title,
+            'message' => $message,
+            'label'   => $label,
+            'options' => $options
         ]);
     }
 
