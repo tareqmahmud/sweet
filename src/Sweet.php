@@ -111,6 +111,21 @@ class Sweet
     }
 
     /**
+     * Create universal sweet message
+     *
+     * @param $title
+     * @param null $message
+     * @param string $label
+     * @return $this
+     */
+    public function message($title, $message = null, $label = 'info')
+    {
+        $this->create($title, $message, $label);
+
+        return $this;
+    }
+
+    /**
      * Define is message auto hide or not
      *
      * @param int $timer
