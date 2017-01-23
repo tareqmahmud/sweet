@@ -109,4 +109,15 @@ class Sweet
 
         return $this;
     }
+
+    /**
+     * Define is message auto hide or not
+     *
+     * @param int $timer
+     */
+    public function autoHide($timer = 1500)
+    {
+        $this->session->flash('sweet_message.autoHide', true);
+        $this->session->flash('sweet_message.timer', $timer);
+    }
 }
