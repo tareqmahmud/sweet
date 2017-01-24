@@ -1,6 +1,6 @@
 # Ultimate Sweet Alert Messages for Laravel
 
-### Installation
+## Installation
 
 First, pull the package through composer
 
@@ -30,7 +30,7 @@ php artisan vendor:publish --tag=sweet_assets
 
 >   It'll copy sweetalert.css and sweetalert.js to your public/css/libs/sweetalert.css & public/css/libs/sweetalert.js
 
-Then add this to your main html layout file
+Then add this to your main HTML layout file
 
 ```html
 <link rel="stylesheet" href="css/libs/sweetalert.css">
@@ -39,7 +39,7 @@ Then add this to your main html layout file
 
 Installation done now you can use sweet alert package.
 
-##### View Sweet Message
+#### View Sweet Message
 
 For view sweet message add sweet_message to your main layout file
 
@@ -47,13 +47,13 @@ For view sweet message add sweet_message to your main layout file
 @include(sweet::flash_message)
 ```
 
->   You must need to add this after sweetalert.js. Otherwise you can't show any sweet message
+>   You must need to add this after sweetalert.js. Otherwise, you can't show any sweet message
 
-### Usage
+## Usage
 
- #### With the helper function
+### With the helper function
 
-Within you controllers, before redirect you can add sweet notification
+Within you controllers, before redirect, you can add sweet notification
 
 ```php
 public function update()
@@ -66,7 +66,7 @@ public function update()
 
 >   Or you can only pass message like sweet("Successfully New user created")
 
-###### If you want you can add label also.
+##### If you want you can add label also.
 
 -   ```sweet("New User", "Successfully new user created", "info")```
 
@@ -79,7 +79,7 @@ public function update()
 
 -   ```sweet("New User", "Successfully new user created", "warning")```
 
-###### You can call label method like this:
+##### You can call label method like this:
 
 -   ```sweet()->info("New User", "Successfully new user created")```
 
@@ -92,7 +92,7 @@ public function update()
 
 -   ```sweet()->warning("New User", "Successfully new user created")```
 
-If you want to auto hide alert then you can add autoHide() method
+If you want to auto-hide alert then you can add autoHide() method
 
 ```php
 public function update()
@@ -103,7 +103,7 @@ public function update()
 }
 ```
 
-###### Or
+##### Or
 
 ```php
 public function update()
@@ -114,9 +114,7 @@ public function update()
 }
 ```
 
-
-
-#### With the Facade
+### With the Facade
 
 First import Sweet facade in your controller.
 
@@ -124,7 +122,7 @@ First import Sweet facade in your controller.
 use Sweet;
 ```
 
-Within you controllers, before redirect you can add sweet notification
+Within you controllers, before redirect, you can add sweet notification
 
 ```php
 public function update()
@@ -137,7 +135,7 @@ public function update()
 
 >   Or you can pass only 
 
-###### If you want you can add label also.
+##### If you want you can add label also.
 
 -   ```Sweet::message("New User", "Successfully new user created", "info")```
 
@@ -150,7 +148,7 @@ public function update()
 
 -   ```Sweet::message("New User", "Successfully new user created", "warning")```
 
-###### You can call label method like this:
+##### You can call label method like this:
 
 -   ```Sweet::info("New User", "Successfully new user created")```
 
@@ -163,7 +161,7 @@ public function update()
 
 -   ```Sweet::warning("New User", "Successfully new user created")```
 
-If you want to auto hide alert then you can add autoHide() method
+If you want to auto-hide alert then you can add autoHide() method
 
 ```php
 public function update()
@@ -174,7 +172,7 @@ public function update()
 }
 ```
 
-###### Or
+##### Or
 
 ```php
 public function update()
@@ -185,7 +183,7 @@ public function update()
 }
 ```
 
-###### Sweet alert with options
+##### Sweet alert with options
 
 You can pass all sweet alert options like this
 
@@ -201,7 +199,7 @@ public function update()
 }
 ```
 
-###### Or
+##### Or
 
 ```php
 public function update()
@@ -217,7 +215,7 @@ public function update()
 
 >   You can get all sweet alert options in this link [Sweet Options](http://t4t5.github.io/sweetalert/)
 
-#### Example
+### Example
 
 PostController.php
 
@@ -257,8 +255,8 @@ index.blade.php
 </html>
 ```
 
-![https://www.dropbox.com/s/yls1ricu74qv7ww/sweet.png](Sweet Alert Example)
+![sweet](https://cloud.githubusercontent.com/assets/4035645/22215598/f6903920-e169-11e6-8a25-dedea4b942e8.png)
 
-### Credits
+## Credits
 
-#### [Sweet Alert](Sweet Alert) - Beautiful Sweet Alert JS
+### [Sweet Alert](Sweet Alert) - Beautiful Sweet Alert JS
