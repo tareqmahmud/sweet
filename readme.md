@@ -44,7 +44,7 @@ Installation done now you can use sweet alert package.
 For view sweet message add sweet_message to your main layout file
 
 ```php
-@include(sweet::flash_message)
+@include(sweet::sweet_message)
 ```
 
 >   You must need to add this after sweetalert.js. Otherwise, you can't show any sweet message
@@ -68,29 +68,29 @@ public function update()
 
 ##### If you want you can add label also.
 
--   ```sweet("New User", "Successfully new user created", "info")```
+-   ```sweet("New User", "Successfully new user created", "info");```
 
 
--   ```sweet("New User", "Successfully new user created", "success")```
+-   ```sweet("New User", "Successfully new user created", "success");```
 
 
--   ```sweet("New User", "Successfully new user created", "error")```
+-   ```sweet("New User", "Successfully new user created", "error");```
 
 
--   ```sweet("New User", "Successfully new user created", "warning")```
+-   ```sweet("New User", "Successfully new user created", "warning");```
 
 ##### You can call label method like this:
 
--   ```sweet()->info("New User", "Successfully new user created")```
+-   ```sweet()->info("New User", "Successfully new user created");```
 
 
--   ```sweet()->success("New User", "Successfully new user created")```
+-   ```sweet()->success("New User", "Successfully new user created");```
 
 
--   ```sweet()->error("New User", "Successfully new user created")```
+-   ```sweet()->error("New User", "Successfully new user created");```
 
 
--   ```sweet()->warning("New User", "Successfully new user created")```
+-   ```sweet()->warning("New User", "Successfully new user created");```
 
 If you want to auto-hide alert then you can add autoHide() method
 
@@ -137,29 +137,29 @@ public function update()
 
 ##### If you want you can add label also.
 
--   ```Sweet::message("New User", "Successfully new user created", "info")```
+-   ```Sweet::message("New User", "Successfully new user created", "info");```
 
 
--   ```Sweet::message("New User", "Successfully new user created", "success")```
+-   ```Sweet::message("New User", "Successfully new user created", "success");```
 
 
--   ```Sweet::message("New User", "Successfully new user created", "error")```
+-   ```Sweet::message("New User", "Successfully new user created", "error");```
 
 
--   ```Sweet::message("New User", "Successfully new user created", "warning")```
+-   ```Sweet::message("New User", "Successfully new user created", "warning");```
 
 ##### You can call label method like this:
 
--   ```Sweet::info("New User", "Successfully new user created")```
+-   ```Sweet::info("New User", "Successfully new user created");```
 
 
--   ```Sweet::success("New User", "Successfully new user created")```
+-   ```Sweet::success("New User", "Successfully new user created");```
 
 
--   ```Sweet::error("New User", "Successfully new user created")```
+-   ```Sweet::error("New User", "Successfully new user created");```
 
 
--   ```Sweet::warning("New User", "Successfully new user created")```
+-   ```Sweet::warning("New User", "Successfully new user created");```
 
 If you want to auto-hide alert then you can add autoHide() method
 
